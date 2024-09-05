@@ -24,7 +24,6 @@ function App() {
 
   const handleGenerateImage = async () => {
     const generatedImages = await fetchGeneratedImage(inputText);
-    console.log(generatedImages);
     setImageUrl(generatedImages[0].url);
   };
 
