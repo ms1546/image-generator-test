@@ -9,7 +9,7 @@ frontend:
         - npm run build
     test:
       commands:
-        - npm test
+        - CI=true npm test
   artifacts:
     baseDirectory: build
     files:
